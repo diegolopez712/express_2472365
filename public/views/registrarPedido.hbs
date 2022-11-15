@@ -1,0 +1,28 @@
+{{> header }}
+
+    <h1>{{ nombre }}</h1>
+    
+    <form action="">
+        <label>Producto</label>
+        <select id = "producto" >
+            <option value="1">Aceite</option>
+            <option value="2">Arroz</option>
+            <option value="3">Agua</option>
+        </select>
+        <br>
+        <label>Precio:</label>
+        <input type="text" id="precio">
+        <br>
+        <label>Cantidad</label>
+        <input type="text" id="cantidad">  
+        <br>     
+        <label>Subtotal:</label>
+        <input type="text" id="subtotal" readonly>
+        <br>
+        <button id="btnRegistrar" type="button">Registrar</button>
+    </form>
+    <p id="respuesta">****************</p>
+    
+    <script src="../assets/js/funciones.js"></script>
+
+{{> footer }}
