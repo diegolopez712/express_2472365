@@ -1,7 +1,8 @@
+require('dotenv').config()
 const express = require('express') //Importar el paquete express
 const app = express()
 const hbs = require('hbs')
-const port = 8282 //Definir el puerto
+const port = process.env.PORT //Definir el puerto
 
 //Servidor contenido estático
 //Establecer el directorio donde se encuentran los 
@@ -29,9 +30,7 @@ app.get('/contacto', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    //res.send('Página no encontrada')
-    //Llamar ls página
-    res.sendFile(__dirname + '/public/404.html');
+    res.send('404')
 })
 
 app.listen(port, () => {
