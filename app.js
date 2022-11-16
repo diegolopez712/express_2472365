@@ -57,3 +57,13 @@ miércole 02 de noviembre
 Entrega de base de datos no relacional del proyecto
 Verificación de conocimientos.
 */
+
+/*
+15-11-2022
+Faltaron:
+Juliana
+Xiomara
+Mario
+
+
+*/
